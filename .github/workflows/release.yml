@@ -65,8 +65,8 @@ jobs:
           ./run lib core
   build:
     name: Gradle Build
-    runs-on: ubuntu-20.04
-    timeout-minutes: 60
+    runs-on: ubuntu-22.04
+    timeout-minutes: 120
     needs:
       - libcore
     steps:

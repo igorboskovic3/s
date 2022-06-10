@@ -66,15 +66,15 @@ object Theme {
     }
 
     fun getTheme(): Int {
-        return getTheme(if (isExpert) DataStore.appTheme else defaultTheme())
+        return getTheme(DataStore.appTheme)
     }
 
     fun getDialogTheme(): Int {
-        return getDialogTheme(if (isExpert) DataStore.appTheme else defaultTheme())
+        return getDialogTheme(DataStore.appTheme)
     }
 
     fun getTranslucentTheme(): Int {
-        return getTranslucentTheme(if (isExpert) DataStore.appTheme else defaultTheme())
+        return getTranslucentTheme(DataStore.appTheme)
     }
 
     fun getTheme(theme: Int): Int {
